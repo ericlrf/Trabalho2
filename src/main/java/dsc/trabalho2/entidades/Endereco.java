@@ -6,19 +6,19 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class Endereco implements Serializable {
-    @Column(name = "END_TXT_LOGRADOURO", length = 150, nullable = false)
+    @Column(name = "END_TXT_LOGRADOURO", length = 150, nullable = true)
     private String logradouro;
-    @Column(name = "END_TXT_BAIRRO", length = 150, nullable = false)
+    @Column(name = "END_TXT_BAIRRO", length = 150, nullable = true)
     private String bairro;
-    @Column(name = "END_NUMERO", length = 5, nullable = false)
+    @Column(name = "END_NUMERO", length = 5, nullable = true)
     private Integer numero;
     @Column(name = "END_TXT_COMPLEMENTO", length = 30, nullable = true)
     private String complemento;
-    @Column(name = "END_TXT_CEP", length = 20, nullable = false)
+    @Column(name = "END_TXT_CEP", length = 20, nullable = true)
     private String cep;
-    @Column(name = "END_TXT_CIDADE", length = 50, nullable = false)
+    @Column(name = "END_TXT_CIDADE", length = 50, nullable = true)
     private String cidade;
-    @Column(name = "END_TXT_ESTADO", length = 50, nullable = false)
+    @Column(name = "END_TXT_ESTADO", length = 50, nullable = true)
     private String estado;
 
     public String getBairro() {
