@@ -1,4 +1,4 @@
-package dsc.trabalho2;
+package dsc.trabalho2.entidades;
 
 import java.io.Serializable;
 import javax.persistence.Column;

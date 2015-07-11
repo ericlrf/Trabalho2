@@ -1,4 +1,4 @@
-package dsc.trabalho2;
+package dsc.trabalho2.entidades;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -91,7 +91,7 @@ class ContaBancaria implements Serializable {
 
     @Override
     public String toString() {
-        return "CartaoCredito[ id=" + id + " ]";
+        return "ContaBancaria[ id=" + id + " ]";
     }
 
 }
