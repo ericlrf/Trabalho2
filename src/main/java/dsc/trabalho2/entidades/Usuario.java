@@ -19,16 +19,17 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
+import javax.persistence.MappedSuperclass;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
 @Table(name = "TB_USUARIO")
 @Inheritance(strategy = InheritanceType.JOINED) //Estratégia de herança.
 @DiscriminatorColumn(name = "DISC_USUARIO", //Nome da coluna que vai discriminar subclasses.
         discriminatorType = DiscriminatorType.STRING, length = 1)
 @Access(AccessType.FIELD)
+@MappedSuperclass
 public abstract class Usuario implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
